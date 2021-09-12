@@ -26,18 +26,19 @@ Our target was "positive return", i.e. taking the return and if it was positive,
 
 We then use an amazing library, *Facets* to help visualise the training and testing sets of data for both the full set of all data and then features.  Facets makes this task very easy, hence our use of it.
 
-### Notebook Instructions
+### Notebook Instructions  
 
-The Notebook will qork equally well on either Google Colab or Jupyter Notebook.  For Colab though, ensure the required files are uploaded; these are: -
-- 
+The Notebook will work equally well on either Google Colab or Jupyter Notebook.  For Colab though, ensure the required files are uploaded; these are: - 
+- `./Resources/btc-usd_2014-2021.csv`
+- `./vertex_results/BTC-USD_vertex_preds.csv`  
 
-For all executions, ensure you set the variables, before execution
+For all executions, ensure you set the variables, before execution.
 - To make life easy, use Bitcoin 
   - `ticker = 'BTC-USD'`
   - `live = False`    -> for Colab, use `False`
   - `colab = False`   -> for Colab, use `True`, obviously
   - `vertex = False`  -> for `BTC-USD`, use `True`, else `False`
-- If you don't want to use Bitcoin, use any Ticker, but then you need to have `live = True` so that the Notebook can pull the data.
+- If you don't want to use Bitcoin, use any Ticker, but then you need to have `live = True` to ensure the Notebook can pull data live from Pandas Datareader.
 
 Then run through the Notebook, and have fun with the analysis.  Make sure you pause with the use of *Facets* and explore its use; it is exceptionally powerful for what it is.
 
@@ -49,18 +50,21 @@ We decided to use Google Vertex AI for 2 main reasons, firstly in learning what 
 
 ### Quick Overview
 
-*Google Vertex AI*
 - Requires Google account
 - Upload data
 - Analyse data
 - identify features, target and split
 - Generate model
+
 ... and then wait ...  
+
   ![Oops, image not available](./Images/spoungebob_3_hours_later.png "And wait ...")  
 
 ### Detailed Look at Vertex AI  
 
 For a more detailed look at Vertex, please dive into the [following PDF](./Resources/Google-Vertex-Summary-and-Walkthrough.pdf), which has been included in the repository and explains a little more about it (with some URLs to learning more) and then shows the process we went through with screenshots.
+
+If you're even more curious, look at the screenshots found in `./Images`.
 
 ---
 # Acknowledgments
